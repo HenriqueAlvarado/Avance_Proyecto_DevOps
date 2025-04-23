@@ -34,10 +34,12 @@ resource "aws_internet_gateway" "igw" {
 # Route Table
 resource "aws_route_table" "public_rt" {
   vpc_id = aws_vpc.main_vpc.id
+
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.igw.id
   }
+
   tags = {
     Name = "PublicRouteTable"
   }
@@ -119,21 +121,7 @@ resource "aws_instance" "jump_server" {
   }
 }
 
-# Un solo Web Server
-resource "aws_instance" "web_server" {
-  ami                         = "ami-084568db4383264d4"
-  instance_type               = "t2.micro"
-  subnet_id                   = aws_subnet.public_subnet.id
-  vpc_security_group_ids      = [aws_security_group.web_sg.id]
-  key_name                    = "vockey"
-  associate_public_ip_address = true
-
-  tags = {
-    Name = "WebServer"
-  }
-}
-
-# DynamoDB Tabla de Usuarios
+# DynamoDB - Tabla Usuarios
 resource "aws_dynamodb_table" "usuarios" {
   name           = "usuarios"
   billing_mode   = "PAY_PER_REQUEST"
@@ -154,7 +142,7 @@ resource "aws_dynamodb_table" "usuarios" {
   }
 }
 
-# DynamoDB Tabla de Celulares
+# DynamoDB - Tabla Celulares
 resource "aws_dynamodb_table" "celulares" {
   name           = "celulares"
   billing_mode   = "PAY_PER_REQUEST"
@@ -177,6 +165,49 @@ resource "aws_dynamodb_table" "celulares" {
 
   tags = {
     Name = "TablaCelulares"
+  }
+}
+
+# IAM Role para la instancia web
+resource "aws_iam_role" "web_role" {
+  name = "WebServerRole"
+
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [
+      {
+        Effect = "Allow",
+        Principal = {
+          Service = "ec2.amazonaws.com"
+        },
+        Action = "sts:AssumeRole"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_role_policy_attachment" "web_dynamodb_policy" {
+  role       = aws_iam_role.web_role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+}
+
+resource "aws_iam_instance_profile" "web_instance_profile" {
+  name = "WebServerInstanceProfile"
+  role = aws_iam_role.web_role.name
+}
+
+# Web Server
+resource "aws_instance" "web_server" {
+  ami                         = "ami-084568db4383264d4"
+  instance_type               = "t2.micro"
+  subnet_id                   = aws_subnet.public_subnet.id
+  vpc_security_group_ids      = [aws_security_group.web_sg.id]
+  key_name                    = "vockey"
+  associate_public_ip_address = true
+  iam_instance_profile        = aws_iam_instance_profile.web_instance_profile.name
+
+  tags = {
+    Name = "WebServer"
   }
 }
 
