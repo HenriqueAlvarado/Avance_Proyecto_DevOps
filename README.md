@@ -36,12 +36,6 @@
   <img src="Infraestructura (2).png" alt="Infraestructura del proyecto" width="600">
 </p>
 
-<h2 align="center"><u>Infraestructura de nuestro proyecto</u></h2>
-
-<p align="center">
-  <img src="Infraestructura (2).png" alt="Infraestructura del proyecto" width="600">
-</p>
-
 <h3 align="center">Descripción de Nuestra Arquitectura en AWS</h3>
 <p>
   En este proyecto, diseñamos una arquitectura en AWS que combina seguridad, segmentación de red y acceso controlado a la base de datos. Toda la infraestructura se encuentra dentro de una VPC con el rango de IPs 10.10.0.0/20, desplegada en una sola zona de disponibilidad.
