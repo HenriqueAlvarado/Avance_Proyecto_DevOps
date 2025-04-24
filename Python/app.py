@@ -10,7 +10,6 @@ dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 tabla_usuarios = dynamodb.Table('usuarios')
 tabla_celulares = dynamodb.Table('celulares')
 
-# Estilos
 style = """
 <style>
     body {
@@ -186,13 +185,4 @@ def agregar_carrito():
         carrito.append({'nombre': nombre, 'precio': precio, 'cantidad': 1})
 
     session['carrito'] = carrito
-    celulares = tabla_celulares.scan().get('Items', [])
-    return render_template_string(main_page_html, username=session['username'], celulares=celulares, carrito=carrito)
-
-@app.route('/logout')
-def logout():
-    session.clear()
     return redirect('/')
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
