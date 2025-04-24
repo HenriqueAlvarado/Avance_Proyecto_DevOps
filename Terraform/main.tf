@@ -7,6 +7,7 @@ resource "aws_vpc" "main_vpc" {
   cidr_block           = "10.10.0.0/20"
   enable_dns_support   = true
   enable_dns_hostnames = true
+
   tags = {
     Name = "MainVPC"
   }
@@ -18,6 +19,7 @@ resource "aws_subnet" "public_subnet" {
   cidr_block              = "10.10.0.0/24"
   map_public_ip_on_launch = true
   availability_zone       = "us-east-1a"
+
   tags = {
     Name = "PublicSubnet"
   }
@@ -26,6 +28,7 @@ resource "aws_subnet" "public_subnet" {
 # Internet Gateway
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.main_vpc.id
+
   tags = {
     Name = "InternetGateway"
   }
@@ -45,12 +48,13 @@ resource "aws_route_table" "public_rt" {
   }
 }
 
+# Route Table Association
 resource "aws_route_table_association" "a" {
   subnet_id      = aws_subnet.public_subnet.id
   route_table_id = aws_route_table.public_rt.id
 }
 
-# SG para Jump Server
+# Security Group for Jump Server
 resource "aws_security_group" "jump_sg" {
   name        = "JumpSG"
   description = "Allow SSH from Internet"
@@ -75,7 +79,7 @@ resource "aws_security_group" "jump_sg" {
   }
 }
 
-# SG para Web Server
+# Security Group for Web Server
 resource "aws_security_group" "web_sg" {
   name        = "WebSG"
   description = "Allow HTTP from Internet and SSH from Jump"
@@ -107,7 +111,7 @@ resource "aws_security_group" "web_sg" {
   }
 }
 
-# Jump Server
+# Jump Server Instance
 resource "aws_instance" "jump_server" {
   ami                         = "ami-084568db4383264d4"
   instance_type               = "t2.micro"
@@ -123,17 +127,12 @@ resource "aws_instance" "jump_server" {
 
 # DynamoDB - Tabla Usuarios
 resource "aws_dynamodb_table" "usuarios" {
-  name           = "usuarios"
-  billing_mode   = "PAY_PER_REQUEST"
-  hash_key       = "username"
+  name         = "usuarios"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "username"
 
   attribute {
     name = "username"
-    type = "S"
-  }
-
-  attribute {
-    name = "password"
     type = "S"
   }
 
@@ -144,22 +143,12 @@ resource "aws_dynamodb_table" "usuarios" {
 
 # DynamoDB - Tabla Celulares
 resource "aws_dynamodb_table" "celulares" {
-  name           = "celulares"
-  billing_mode   = "PAY_PER_REQUEST"
-  hash_key       = "nombre"
+  name         = "celulares"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "nombre"
 
   attribute {
     name = "nombre"
-    type = "S"
-  }
-
-  attribute {
-    name = "precio"
-    type = "S"
-  }
-
-  attribute {
-    name = "foto"
     type = "S"
   }
 
@@ -168,35 +157,35 @@ resource "aws_dynamodb_table" "celulares" {
   }
 }
 
-# IAM Role para la instancia web
+# IAM Role para instancia web
 resource "aws_iam_role" "web_role" {
   name = "WebServerRole"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
-    Statement = [
-      {
-        Effect = "Allow",
-        Principal = {
-          Service = "ec2.amazonaws.com"
-        },
-        Action = "sts:AssumeRole"
-      }
-    ]
+    Statement = [{
+      Effect = "Allow",
+      Principal = {
+        Service = "ec2.amazonaws.com"
+      },
+      Action = "sts:AssumeRole"
+    }]
   })
 }
 
+# Adjuntar política de DynamoDB
 resource "aws_iam_role_policy_attachment" "web_dynamodb_policy" {
   role       = aws_iam_role.web_role.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
 }
 
+# Perfil de instancia
 resource "aws_iam_instance_profile" "web_instance_profile" {
   name = "WebServerInstanceProfile"
   role = aws_iam_role.web_role.name
 }
 
-# Web Server
+# Web Server Instance
 resource "aws_instance" "web_server" {
   ami                         = "ami-084568db4383264d4"
   instance_type               = "t2.micro"
