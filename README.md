@@ -1,6 +1,6 @@
 <h1 align="center">¡Bienvenidos, somos SellPhones</h1>
 <p align="center">
-<a href="[https://kasroudra.github.io/](https://github.com/HenriqueAlvarado/Avance_Proyecto_DevOps)" target="_blank"><img align="center" src="[https://github.com/KasRoudra/kasroudra.github.io/raw/main/icons/android-512x512.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupport.apple.com%2Fes-mx%2F121032&psig=AOvVaw0VdMMqa-UYKf4WhEtNTZYD&ust=1745539483638000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODPsbiv74wDFQAAAAAdAAAAABAE)" alt="SellPhone Logo" height="100" width="100"></a>
+<a href="[https://kasroudra.github.io/](https://github.com/HenriqueAlvarado/Avance_Proyecto_DevOps)" target="_blank"><img align="center" src="Logoapp.png" alt="SellPhone Logo" height="100" width="100"></a>
 </p>
 <h3 align="center">SellPhones: Conecta con lo mejor</h3>
 <h2 align="center"><u>¿Por qué elegir SellPhones?</u></h2>
