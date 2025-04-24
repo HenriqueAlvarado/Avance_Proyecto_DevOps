@@ -71,13 +71,11 @@
 
 <hr>
 
-<h4 align="center">Cómo desplegar la infraestructura y cómo desplegar la aplicación</h4>
-
-<hr>
-
+<h3 align="center">Cómo desplegar la infraestructura y cómo desplegar la aplicación</h3>
 <p>
   En esta fase de nuestro proyecto, hemos redactado una explicación detallada en nuestro archivo de Word, en el cual describimos minuciosamente los pasos seguidos para abordar esta parte del avance. A lo largo de este documento, hemos plasmado el proceso completo, desde la planificación hasta la ejecución, con el objetivo de ofrecer una comprensión clara y completa de las decisiones tomadas, las herramientas utilizadas y los resultados obtenidos hasta el momento. Además, se incluyen detalles técnicos y específicos sobre las configuraciones y procedimientos implementados, para que cualquier lector pueda entender a fondo cómo llegamos a este punto del proyecto.
 </p>
+
 
 
 
