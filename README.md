@@ -24,14 +24,10 @@
 
 | Name                  | Description                                                |
 | ---------------------------------|--------------------------------------------------------------- |
-| _[Repository Readme Generator](https://github.com/KasRoudra/repository-readme-generator)_            | Generate a beautiful Readme.md for your repository.             |
-| _[PyPhisher](https://github.com/KasRoudra/pyphisher)_                          | Ultimate phishing tool in python with 64 website templates.     |
-| _[YT-Downloader](https://github.com/KasRoudra/YT-Downloader)_                  | Download youtube audio or videos from command line.             |
-| _[MusPlayer](https://github.com/KasRoudra/MusPlayer)_                         | Play music in termux by mpv.                                     |
-| _[Messenger-Desktop](https://github.com/KasRoudra/messengerdesktop)_           |  Messenger in desktop mode for easy file sharing.                |
-| _[K-Fuscator](https://github.com/KasRoudra/k-fuscator)_                       | Encrypt or decrypt shell script and compile python scripts       |
-| _[CamHacker](https://github.com/KasRoudra/CamHacker)_                         | Hack anyone's camera with a phishing link.                       |
-| _[Local2Internet](https://github.com/KasRoudra/Local2Internet)_               | Expose locally hosted website into all over internet.            |
+| _[Henrique Alvarado: Dev Infraestructura](https://github.com/HenriqueAlvarado)_            | Especialista en infraestructura como código, encargado de diseñar y desplegar toda la arquitectura del proyecto utilizando Terraform, asegurando entornos escalables y seguros.             |
+| _[Jorge Marroquín: Dev QA](https://github.com/Eliuddd)_                          | Responsable de conectar y asegurar la integración eficiente entre la base de datos y el backend, garantizando funcionalidad, calidad y rendimiento en cada componente del sistema.     |
+| _[Eros Palma: Ingeniero en software](https://github.com/erospalma)_                  | Encargado del desarrollo del frontend y los scripts en Python, combinando diseño intuitivo con lógica robusta para ofrecer una experiencia de usuario fluida y funcional.             |
+
 <h4 align="center">All of these are open source!</h4>
 
 <h2 align="center"><u>My Github Stats</u></h2>
