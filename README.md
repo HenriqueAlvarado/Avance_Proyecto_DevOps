@@ -1,100 +1,33 @@
-<h1 align="center">Hi visitor, I'm KasRoudra!</h1>
+<h1 align="center">¡Bienvenidos, somos SellPhones</h1>
 <p align="center">
-<a href="https://kasroudra.github.io/" target="_blank"><img align="center" src="https://github.com/KasRoudra/kasroudra.github.io/raw/main/icons/android-512x512.png" alt="KasRoudra's Portfolio" height="100" width="100"></a>
+<a href="[https://kasroudra.github.io/](https://github.com/HenriqueAlvarado/Avance_Proyecto_DevOps)" target="_blank"><img align="center" src="[https://github.com/KasRoudra/kasroudra.github.io/raw/main/icons/android-512x512.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupport.apple.com%2Fes-mx%2F121032&psig=AOvVaw0VdMMqa-UYKf4WhEtNTZYD&ust=1745539483638000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODPsbiv74wDFQAAAAAdAAAAABAE)" alt="SellPhone Logo" height="100" width="100"></a>
 </p>
-<h3 align="center">Formerly a student but passionate in programming</h3>
-<h2 align="center"><u>Personal Details</u></h2>
+<h3 align="center">SellPhones: Conecta con lo mejor</h3>
+<h2 align="center"><u>¿Por qué elegir SellPhones?</u></h2>
 <p align="center">
 
- - I'm trying to learn HTML, CSS, JavaScript, PHP, C, Python, Shell, Ruby and Java.
+ - 📱 Amplia variedad de modelos: Desde los últimos lanzamientos hasta opciones económicas, encuentra el celular perfecto para ti.
  
- - My hobby is reading books, listening music, playing games.
+ - 💰 Precios competitivos: Ofertas irresistibles y descuentos especiales todo el año.
 
- - Sometimes, I write small poems, stories too.
+ - ⚡ Compra rápida y segura: Plataforma intuitiva, métodos de pago confiables y protección al comprador.
 
- - I make ringtones, fake screenshots, memes, meme templates in my leisure time.
+ - 🚚 Envío rápido a todo el país: Recibe tu celular en la puerta de tu casa en tiempo récord.
  
- - I love to collect apps, games, movies, songs, fonts, iso etc.
+ - 🛠️ Garantía en todos los equipos: Tranquilidad asegurada con cobertura ante cualquier inconveniente.
 
- - I've some experience in rooting, installing custom rom/OS in android and installing OS in PC.
+ - 👨‍💻 Atención al cliente personalizada: Nuestro equipo está listo para ayudarte antes, durante y después de tu compra.
 
 </p>
 
-<p style="display: inline-block;" align="center">
-  <kbd>
-    <kbd>Front-end</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /> 
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" /> 
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /> 
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-  </kbd>
-  <kbd>
-    <kbd>Back-end</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" />
-  </kbd>
-  <kbd>
-    <kbd>Library/FrameWorks</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" />
-  </kbd>
-  <br>
-  <kbd>
-    <kbd>Apps</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" />
-  </kbd>
-  <kbd>
-    <kbd>Terminal Scripts</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
-  </kbd>
-  <kbd>
-    <kbd>Tools</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
-    <img width="30px" src="https://github.com/termux/termux-app/raw/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
-    <img width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/512px-Repl.it_logo.svg.png">
-  </kbd>
-  <kbd>
-    <kbd>OS</kbd>
-    <br>
-    <br>
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
-    <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
-  </kbd>
-</p>
-
-<h2 align="center"><u>My Best Works</u></h2>
+<h2 align="center"><u>Roles del Equipo</u></h2>
 
 | Name                  | Description                                                |
 | ---------------------------------|--------------------------------------------------------------- |
-| _[Repository Readme Generator](https://github.com/KasRoudra/repository-readme-generator)_            | Generate a beautiful Readme.md for your repository.             |
-| _[PyPhisher](https://github.com/KasRoudra/pyphisher)_                          | Ultimate phishing tool in python with 64 website templates.     |
-| _[YT-Downloader](https://github.com/KasRoudra/YT-Downloader)_                  | Download youtube audio or videos from command line.             |
-| _[MusPlayer](https://github.com/KasRoudra/MusPlayer)_                         | Play music in termux by mpv.                                     |
-| _[Messenger-Desktop](https://github.com/KasRoudra/messengerdesktop)_           |  Messenger in desktop mode for easy file sharing.                |
-| _[K-Fuscator](https://github.com/KasRoudra/k-fuscator)_                       | Encrypt or decrypt shell script and compile python scripts       |
-| _[CamHacker](https://github.com/KasRoudra/CamHacker)_                         | Hack anyone's camera with a phishing link.                       |
-| _[Local2Internet](https://github.com/KasRoudra/Local2Internet)_               | Expose locally hosted website into all over internet.            |
+| _[Henrique Alvarado: Dev Infraestructura](https://github.com/HenriqueAlvarado)_            | Especialista en infraestructura como código, encargado de diseñar y desplegar toda la arquitectura del proyecto utilizando Terraform, asegurando entornos escalables y seguros.             |
+| _[Jorge Marroquín: Dev QA](https://github.com/Eliuddd)_                          | Responsable de conectar y asegurar la integración eficiente entre la base de datos y el backend, garantizando funcionalidad, calidad y rendimiento en cada componente del sistema.     |
+| _[Eros Palma: Ingeniero en software](https://github.com/erospalma)_                  | Encargado del desarrollo del frontend y los scripts en Python, combinando diseño intuitivo con lógica robusta para ofrecer una experiencia de usuario fluida y funcional.             |
+
 <h4 align="center">All of these are open source!</h4>
 
 <h2 align="center"><u>My Github Stats</u></h2>
