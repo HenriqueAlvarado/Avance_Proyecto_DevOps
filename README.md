@@ -1,22 +1,22 @@
-<h1 align="center">Hi visitor, I'm KasRoudra!</h1>
+<h1 align="center">¡Bienvenidos, somos SellPhones</h1>
 <p align="center">
-<a href="https://kasroudra.github.io/" target="_blank"><img align="center" src="https://github.com/KasRoudra/kasroudra.github.io/raw/main/icons/android-512x512.png" alt="KasRoudra's Portfolio" height="100" width="100"></a>
+<a href="[https://kasroudra.github.io/](https://github.com/HenriqueAlvarado/Avance_Proyecto_DevOps)" target="_blank"><img align="center" src="[https://github.com/KasRoudra/kasroudra.github.io/raw/main/icons/android-512x512.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupport.apple.com%2Fes-mx%2F121032&psig=AOvVaw0VdMMqa-UYKf4WhEtNTZYD&ust=1745539483638000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCODPsbiv74wDFQAAAAAdAAAAABAE)" alt="SellPhone Logo" height="100" width="100"></a>
 </p>
-<h3 align="center">Formerly a student but passionate in programming</h3>
-<h2 align="center"><u>Personal Details</u></h2>
+<h3 align="center">SellPhones: Conecta con lo mejor</h3>
+<h2 align="center"><u>¿Por qué elegir SellPhones?</u></h2>
 <p align="center">
 
- - I'm trying to learn HTML, CSS, JavaScript, PHP, C, Python, Shell, Ruby and Java.
+ - 📱 Amplia variedad de modelos: Desde los últimos lanzamientos hasta opciones económicas, encuentra el celular perfecto para ti.
  
- - My hobby is reading books, listening music, playing games.
+ - 💰 Precios competitivos: Ofertas irresistibles y descuentos especiales todo el año.
 
- - Sometimes, I write small poems, stories too.
+ - ⚡ Compra rápida y segura: Plataforma intuitiva, métodos de pago confiables y protección al comprador.
 
- - I make ringtones, fake screenshots, memes, meme templates in my leisure time.
+ - 🚚 Envío rápido a todo el país: Recibe tu celular en la puerta de tu casa en tiempo récord.
  
- - I love to collect apps, games, movies, songs, fonts, iso etc.
+ - 🛠️ Garantía en todos los equipos: Tranquilidad asegurada con cobertura ante cualquier inconveniente.
 
- - I've some experience in rooting, installing custom rom/OS in android and installing OS in PC.
+ - 👨‍💻 Atención al cliente personalizada: Nuestro equipo está listo para ayudarte antes, durante y después de tu compra.
 
 </p>
 
