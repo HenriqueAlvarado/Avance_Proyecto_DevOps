@@ -42,12 +42,16 @@
   En este proyecto, diseñamos una arquitectura en AWS que combina seguridad, segmentación de red y acceso controlado a la base de datos. Toda la infraestructura se encuentra dentro de una VPC con el rango de IPs 10.10.0.0/20, desplegada en una sola zona de disponibilidad.
 </p>
 
+<hr>
+
 <h3 align="center">🌐 Subred Pública (10.10.0.0/24)</h3>
 <ul>
   <li>Desplegamos una instancia EC2 configurada como Linux Jump Server.</li>
   <li>Este servidor actúa como punto de entrada a la infraestructura.</li>
   <li>Un Security Group permite conexiones SSH (puerto 22) desde el exterior para administración segura.</li>
 </ul>
+
+<hr>
 
 <h3 align="center">🔒 Subred Privada</h3>
 <ul>
@@ -56,12 +60,15 @@
   <li>Este servidor realiza operaciones sobre la base de datos y es el único autorizado para comunicarse con Amazon DynamoDB.</li>
 </ul>
 
+<hr>
+
 <h3 align="center">🗃️ Acceso a DynamoDB</h3>
 <ul>
   <li>DynamoDB está fuera de la VPC como servicio gestionado por AWS.</li>
   <li>El servidor web se conecta mediante un IAM Role, evitando el uso de claves estáticas.</li>
   <li>Esto garantiza una conexión segura y escalable.</li>
 </ul>
+
 
 <h4 align="center">Cómo desplegar la infraestructura y cómo desplegar la aplicación</h4>
 
