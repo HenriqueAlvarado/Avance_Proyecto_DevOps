@@ -1,8 +1,8 @@
-# main.tf
 provider "aws" {
   region = "us-east-1"
 }
 
+# VPC
 resource "aws_vpc" "main_vpc" {
   cidr_block           = "10.10.0.0/20"
   enable_dns_support   = true
@@ -13,6 +13,7 @@ resource "aws_vpc" "main_vpc" {
   }
 }
 
+# Subnet
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.main_vpc.id
   cidr_block              = "10.10.0.0/24"
@@ -24,6 +25,7 @@ resource "aws_subnet" "public_subnet" {
   }
 }
 
+# Internet Gateway
 resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.main_vpc.id
 
@@ -32,6 +34,7 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 
+# Route Table
 resource "aws_route_table" "public_rt" {
   vpc_id = aws_vpc.main_vpc.id
 
@@ -45,11 +48,13 @@ resource "aws_route_table" "public_rt" {
   }
 }
 
+# Route Table Association
 resource "aws_route_table_association" "a" {
   subnet_id      = aws_subnet.public_subnet.id
   route_table_id = aws_route_table.public_rt.id
 }
 
+# Security Group for Jump Server
 resource "aws_security_group" "jump_sg" {
   name        = "JumpSG"
   description = "Allow SSH from Internet"
@@ -74,6 +79,7 @@ resource "aws_security_group" "jump_sg" {
   }
 }
 
+# Security Group for Web Server
 resource "aws_security_group" "web_sg" {
   name        = "WebSG"
   description = "Allow HTTP from Internet and SSH from Jump"
@@ -97,9 +103,8 @@ resource "aws_security_group" "web_sg" {
     from_port   = 5000
     to_port     = 5000
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] 
   }
-
   egress {
     from_port   = 0
     to_port     = 0
@@ -112,6 +117,7 @@ resource "aws_security_group" "web_sg" {
   }
 }
 
+# Jump Server Instance
 resource "aws_instance" "jump_server" {
   ami                         = "ami-084568db4383264d4"
   instance_type               = "t2.micro"
@@ -125,6 +131,7 @@ resource "aws_instance" "jump_server" {
   }
 }
 
+# Web Server Instance
 resource "aws_instance" "web_server" {
   ami                         = "ami-084568db4383264d4"
   instance_type               = "t2.micro"
@@ -138,6 +145,7 @@ resource "aws_instance" "web_server" {
   }
 }
 
+# Salidas
 output "jump_server_ip" {
   value = aws_instance.jump_server.public_ip
 }
