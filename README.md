@@ -32,7 +32,7 @@
 
 <h2 align="center"><u>Infraestructura de nuestro proyecto</u></h2>
 <p align="center">
-  <img src="assets/Infraestructura.png" alt="Infraestructura del proyecto" width="600">
+  <img src="Infraestructura.png" alt="Infraestructura del proyecto" width="600">
 </p>
 
 
