@@ -69,6 +69,7 @@
   <li>Esto garantiza una conexión segura y escalable.</li>
 </ul>
 
+<hr>
 
 <h4 align="center">Cómo desplegar la infraestructura y cómo desplegar la aplicación</h4>
 
