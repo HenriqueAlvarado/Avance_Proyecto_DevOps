@@ -28,9 +28,9 @@
 | _[Jorge Marroquín: Dev QA](https://github.com/Eliuddd)_                          | Responsable de conectar y asegurar la integración eficiente entre la base de datos y el backend, garantizando funcionalidad, calidad y rendimiento en cada componente del sistema.     |
 | _[Eros Palma: Ingeniero en software](https://github.com/erospalma)_                  | Encargado del desarrollo del frontend y los scripts en Python, combinando diseño intuitivo con lógica robusta para ofrecer una experiencia de usuario fluida y funcional.             |
 
-<h4 align="center">All of these are open source!</h4>
+<h4 align="center">Diagrama de Lucid</h4>
 
-<h2 align="center"><u>My Github Stats</u></h2>
+<h2 align="center"><u>Infraestructura de nuestro proyecto</u></h2>
 <p align="center">
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KasRoudra&layout=compact&bg_color=0,73FA79,73FDFF,7A81FF&theme=graywhite&langs_count=10&exclude_repo=kasweb">
 <img align="center" src="https://github-readme-stats.vercel.app/api?username=KasRoudra&count_private=true&show_icons=trueline_height=21&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=graywhite">	
