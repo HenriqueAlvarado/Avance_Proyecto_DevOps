@@ -24,15 +24,16 @@
 
 | Name                  | Description                                                |
 | ---------------------------------|--------------------------------------------------------------- |
-| _[Henrique Alvarado: Dev Infraestructura](https://github.com/HenriqueAlvarado)_            | Especialista en infraestructura como código, encargado de diseñar y desplegar toda la arquitectura del proyecto utilizando Terraform, asegurando entornos escalables y seguros.             |
-| _[Jorge Marroquín: Dev QA](https://github.com/Eliuddd)_                          | Responsable de conectar y asegurar la integración eficiente entre la base de datos y el backend, garantizando funcionalidad, calidad y rendimiento en cada componente del sistema.     |
-| _[Eros Palma: Ingeniero en software](https://github.com/erospalma)_                  | Encargado del desarrollo del frontend y los scripts en Python, combinando diseño intuitivo con lógica robusta para ofrecer una experiencia de usuario fluida y funcional.             |
+| _[Henrique Alvarado: Dev Infraestructura](https://github.com/HenriqueAlvarado)_            | Encargado de diseñar y desplegar toda la infraestructura del proyecto mediante Terraform, asegurando entornos eficientes, escalables y seguros para su funcionamiento.            |
+| _[Jorge Marroquín: Dev QA](https://github.com/Eliuddd)_                          | Responsable de integrar correctamente la base de datos con el backend, garantizando la calidad del sistema mediante pruebas y validaciones que aseguren su correcto desempeño.     |
+| _[Eros Palma: Ingeniero en software](https://github.com/erospalma)_                  | Apoya en el desarrollo de scripts en Python y en la construcción del frontend, contribuyendo a crear una experiencia de usuario funcional, fluida y visualmente atractiva. 
+| _[Juan Espinoza: Ingeniero en software](https://github.com/erospalma)_                  | Especializado en el desarrollo de scripts en Python y en su integración con la base de datos, asegurando que los procesos internos del sistema funcionen correctamente y sin errores.            |
 
 <h4 align="center">Diagrama de Lucid</h4>
 
 <h2 align="center"><u>Infraestructura de nuestro proyecto</u></h2>
 <p align="center">
-  <img src="Infraestructura.png" alt="Infraestructura del proyecto" width="600">
+  <img src="Infraestructura (2).png" alt="Infraestructura del proyecto" width="600">
 </p>
 
 
