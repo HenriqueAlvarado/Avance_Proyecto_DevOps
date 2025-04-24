@@ -1,3 +1,4 @@
+
 <h1 align="center">¡Bienvenidos, somos SellPhones</h1>
 <p align="center">
 <a href="[https://kasroudra.github.io/](https://github.com/HenriqueAlvarado/Avance_Proyecto_DevOps)" target="_blank"><img align="center" src="Logoapp.png" alt="SellPhone Logo" height="100" width="100"></a>
@@ -63,7 +64,13 @@
 </ul>
 
 <h4 align="center">Cómo desplegar la infraestructura y cómo desplegar la aplicación</h4>
--  En esta fase de nuestro proyecto, hemos redactado una explicación detallada en nuestro archivo de Word, en el cual describimos minuciosamente los pasos seguidos para abordar esta parte del avance. A lo largo de este documento, hemos plasmado el proceso completo, desde la planificación hasta la ejecución, con el objetivo de ofrecer una comprensión clara y completa de las decisiones tomadas, las herramientas utilizadas y los resultados obtenidos hasta el momento. Además, se incluyen detalles técnicos y específicos sobre las configuraciones y procedimientos implementados, para que cualquier lector pueda entender a fondo cómo llegamos a este punto del proyecto.
+
+<hr>
+
+<p>
+  En esta fase de nuestro proyecto, hemos redactado una explicación detallada en nuestro archivo de Word, en el cual describimos minuciosamente los pasos seguidos para abordar esta parte del avance. A lo largo de este documento, hemos plasmado el proceso completo, desde la planificación hasta la ejecución, con el objetivo de ofrecer una comprensión clara y completa de las decisiones tomadas, las herramientas utilizadas y los resultados obtenidos hasta el momento. Además, se incluyen detalles técnicos y específicos sobre las configuraciones y procedimientos implementados, para que cualquier lector pueda entender a fondo cómo llegamos a este punto del proyecto.
+</p>
+
 
 
 ------
