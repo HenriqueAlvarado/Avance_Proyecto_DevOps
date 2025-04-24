@@ -76,10 +76,8 @@
   En esta fase de nuestro proyecto, hemos redactado una explicación detallada en nuestro archivo de Word, en el cual describimos minuciosamente los pasos seguidos para abordar esta parte del avance. A lo largo de este documento, hemos plasmado el proceso completo, desde la planificación hasta la ejecución, con el objetivo de ofrecer una comprensión clara y completa de las decisiones tomadas, las herramientas utilizadas y los resultados obtenidos hasta el momento. Además, se incluyen detalles técnicos y específicos sobre las configuraciones y procedimientos implementados, para que cualquier lector pueda entender a fondo cómo llegamos a este punto del proyecto.
 </p>
 
+<h3 align="center">Cómo correr la aplicación localmente (para pruebas) y cómo acceder a la versión desplegada</h3>
+<p>
+  En esta etapa del avance del proyecto, también hemos documentado el proceso de ejecución local de la aplicación (para pruebas) y cómo acceder a la versión desplegada. En nuestro archivo de Word, detallamos los pasos necesarios para realizar las pruebas locales de la aplicación, así como las instrucciones para acceder a la versión una vez que ha sido desplegada correctamente. Esto incluye ejemplos y posibles escenarios de prueba para asegurar que el sistema funcione de acuerdo a lo esperado. Además, toda esta información está disponible en nuestro repositorio de GitHub, donde también se encuentran los scripts y recursos necesarios para facilitar la ejecución y despliegue.
+</p>
 
-
-
-------
-Credit: [KasRoudra](https://github.com/KasRoudra)
-
-Last Edited on: 12/12/2021
