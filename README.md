@@ -32,8 +32,7 @@
 
 <h2 align="center"><u>Infraestructura de nuestro proyecto</u></h2>
 <p align="center">
-<img align="center" src="<img src="https://example.com/tu-imagen.png" alt="Infraestructura del proyecto" width="600">
-">
+<img src="https://drive.google.com/file/d/1mh5Bjoos6fsPAS3CiGLdk44OmXWSK_79/view?usp=sharing" alt="Infraestructura del proyecto" width="600">
 </p>
 
 ### I've little contribution in:
