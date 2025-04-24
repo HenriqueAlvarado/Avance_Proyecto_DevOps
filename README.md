@@ -36,6 +36,29 @@
   <img src="Infraestructura (2).png" alt="Infraestructura del proyecto" width="600">
 </p>
 
+</p>
+<h3 align="center">Descripción de Nuestra Arquitectura en AWS </h3>
+- En este proyecto, diseñamos una arquitectura en AWS que combina seguridad, segmentación de red y acceso controlado a la base de datos. Toda la infraestructura se encuentra dentro de una VPC con el rango de IPs 10.10.0.0/20, y está desplegada en una sola zona de disponibilidad.
+</p>
+
+</p>
+<h3 align="center">🌐 Subred Pública (10.10.0.0/24)</h3>
+- En la subred pública desplegamos una instancia EC2 configurada como Linux Jump Server. Esta máquina actúa como punto de entrada a la infraestructura. Tiene un Security Group configurado para permitir conexiones entrantes vía SSH (puerto 22) desde el exterior, lo que nos permite conectarnos de forma segura para administrar otros servidores internos sin exponerlos directamente a Internet.
+</p>
+
+</p>
+<h3 align="center">🔒 Subred Privada</h3>
+- En la subred privada se encuentra un Linux Web Server, al cual no se puede acceder directamente desde Internet. El acceso SSH a este servidor solo es posible a través del Jump Server, mediante una conexión interna controlada también por su Security Group.
+- Este servidor web es el encargado de realizar operaciones sobre la base de datos, y es el único con permisos para comunicarse con Amazon DynamoDB, una base de datos NoSQL completamente gestionada por AWS.
+</p>
+
+</p>
+<h3 align="center">🗃️ Acceso a DynamoDB</h3>
+- DynamoDB se encuentra fuera de la VPC, como un servicio administrado de AWS. El servidor web se conecta a DynamoDB utilizando las credenciales que le otorga un IAM Role, lo que permite el acceso sin necesidad de exponer claves estáticas. Esto asegura una integración segura y escalable con la base de datos.
+</p>
+
+
+
 
 ### I've little contribution in:
 
