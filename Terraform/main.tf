@@ -125,66 +125,6 @@ resource "aws_instance" "jump_server" {
   }
 }
 
-# DynamoDB - Tabla Usuarios
-resource "aws_dynamodb_table" "usuarios" {
-  name         = "usuarios"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "username"
-
-  attribute {
-    name = "username"
-    type = "S"
-  }
-
-  tags = {
-    Name = "TablaUsuarios"
-  }
-}
-
-# DynamoDB - Tabla Celulares
-resource "aws_dynamodb_table" "celulares" {
-  name         = "celulares"
-  billing_mode = "PAY_PER_REQUEST"
-  hash_key     = "nombre"
-
-  attribute {
-    name = "nombre"
-    type = "S"
-  }
-
-  tags = {
-    Name = "TablaCelulares"
-  }
-}
-
-# IAM Role para instancia web
-resource "aws_iam_role" "web_role" {
-  name = "WebServerRole"
-
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [{
-      Effect = "Allow",
-      Principal = {
-        Service = "ec2.amazonaws.com"
-      },
-      Action = "sts:AssumeRole"
-    }]
-  })
-}
-
-# Adjuntar política de DynamoDB
-resource "aws_iam_role_policy_attachment" "web_dynamodb_policy" {
-  role       = aws_iam_role.web_role.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
-}
-
-# Perfil de instancia
-resource "aws_iam_instance_profile" "web_instance_profile" {
-  name = "WebServerInstanceProfile"
-  role = aws_iam_role.web_role.name
-}
-
 # Web Server Instance
 resource "aws_instance" "web_server" {
   ami                         = "ami-084568db4383264d4"
@@ -193,7 +133,6 @@ resource "aws_instance" "web_server" {
   vpc_security_group_ids      = [aws_security_group.web_sg.id]
   key_name                    = "vockey"
   associate_public_ip_address = true
-  iam_instance_profile        = aws_iam_instance_profile.web_instance_profile.name
 
   tags = {
     Name = "WebServer"
